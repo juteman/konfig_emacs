@@ -2,6 +2,5 @@
 
 (setq-default cursor-type 'bar)
 
-(global-hl-line-mode 1)
-
+(global-hl-line-mode 0)
 (provide 'init-ui)
