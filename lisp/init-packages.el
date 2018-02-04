@@ -1,3 +1,4 @@
+
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
@@ -9,11 +10,11 @@
 
  ;; Add Packages
  (defvar my/packages '(
-		;;test
-		better-defaults
-                ;;themes
-                zenburn-theme
-                ) "Default packages")
+                       ;;themes
+                       zenburn-theme
+		       ;;Smex
+		       smex
+                       ) "Default packages")
 
  (setq package-selected-packages my/packages)
 
