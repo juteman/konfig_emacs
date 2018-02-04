@@ -7,8 +7,13 @@
 ;; ------------分割线-----------------------------------------------------
 
 (require 'init-packages)
+(require 'smartparens-config)
+(require 'init-complete)
 (require 'init-ui)
 (require 'init-better-defaults)
+(require 'lang-c++)
+(require 'init-orgmode)
+(require 'lang-elisp)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

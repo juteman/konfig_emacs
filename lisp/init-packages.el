@@ -12,8 +12,14 @@
  (defvar my/packages '(
                        ;;themes
                        zenburn-theme
-		       ;;Smex
-		       smex
+		       ;;helm
+		       helm
+		       ;;org-mode
+		       org-bullets
+		       ;;括号匹配
+		       smartparens
+		       ;;自动补全
+		       auto-complete
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)
