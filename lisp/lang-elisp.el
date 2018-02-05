@@ -7,4 +7,5 @@
 		     ac-source-words-in-same-mode-buffers)))
 
 (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode)
+(add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
 (provide 'lang-elisp)

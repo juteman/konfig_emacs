@@ -18,8 +18,11 @@
 		       org-bullets
 		       ;;括号匹配
 		       smartparens
+		       ;;彩虹括号
+		       rainbow-delimiters
 		       ;;自动补全
 		       auto-complete
+		       auto-complete-clang
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)

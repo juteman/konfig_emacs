@@ -1,9 +1,12 @@
 (require 'auto-complete-config)
 (ac-config-default)
-(setq-default ac-sources '(ac-sources-words-in-all-buffer))
+(setq-default ac-sources '(ac-sources-words-in-all-buffer ac-source-abbrev ac-source-dictionary))
 (setq ac-use-quick-help t)
 (setq ac-quick-help-delay 1.0)
 (setq ac-auto-start 4)
 (setq ac-fuzzy-enable t)
 (setq ac-use-comphist nil)
+(setq ac-dwim t)
+(setq ac-quick-help-prefer-pos-tip t)
 (provide 'init-complete)
+
