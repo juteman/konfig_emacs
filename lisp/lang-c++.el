@@ -27,4 +27,19 @@
 
 (add-hook 'c-mode-common-hook 'my-cc-mode-setup)
 (add-hook 'c++-mode-hook 'my-cc-mode-setup)
+;;END
+
+
+;;clang-format
+(require 'clang-format)
+(global-set-key (kbd "C-c i") 'clang-format-region)
+(global-set-key (kbd "C-c u") 'clang-format-buffer)
+(setq clang-format-style-option "llvm")
+;;END
+(add-hook 'c++-mode-hook 'flycheck-mode)
+(add-hook 'c-mode-common-hook 'flycheck-mode)
+(add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
 (provide 'lang-c++)
+
+
+

@@ -14,6 +14,8 @@
                        zenburn-theme
 		       ;;helm
 		       helm
+		       ;;
+		       better-defaults
 		       ;;org-mode
 		       org-bullets
 		       ;;括号匹配
@@ -23,6 +25,11 @@
 		       ;;自动补全
 		       auto-complete
 		       auto-complete-clang
+                       ac-helm
+		       ;;clang-format
+		       clang-format
+                       ;;flycheck
+                       flycheck
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)

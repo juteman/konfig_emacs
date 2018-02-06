@@ -9,5 +9,6 @@
 (setq ac-use-comphist nil)
 (setq ac-dwim t)
 (setq ac-quick-help-prefer-pos-tip t)
+(require 'ac-helm)
 (provide 'init-complete)
 
