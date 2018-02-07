@@ -1,5 +1,5 @@
-
-(require 'auto-complete-config)
+(require 'yasnippet)
+(require 'auto-complete-config) 
 (ac-config-default)
 (global-auto-complete-mode 1)
 (setq ac-use-quick-help t)

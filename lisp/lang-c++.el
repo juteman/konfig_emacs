@@ -2,8 +2,15 @@
 (require 'auto-complete-clang)
 (add-hook 'c++-mode-hook #'smartparens-mode)
 (add-hook 'c++-mode-hook #'rainbow-delimiters-mode)
+
 (add-hook 'c-mode-common-hook #'smartparens-mode)
 (add-hook 'c-mode-common-hook #'rainbow-delimiters-mode)
+;;END
+
+;;YASnippet
+(yas-reload-all)
+(add-hook 'c++-mode-hook #'(lambda() ('yas-minor-mode)))
+(add-hook 'c-mode-common-hook #'yas-minor-mode)
 
 ;;自动补全设置
 ;;ac-clang-flags 设置

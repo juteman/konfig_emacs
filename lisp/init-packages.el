@@ -22,6 +22,8 @@
 		       smartparens
 		       ;;彩虹括号
 		       rainbow-delimiters
+		       ;;yasnippet
+		       yasnippet
 		       ;;自动补全
 		       auto-complete
 		       auto-complete-clang
