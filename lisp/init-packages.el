@@ -14,6 +14,7 @@
                        zenburn-theme
 		       ;;helm
 		       helm
+		       ivy
 		       ;;
 		       better-defaults
 		       ;;org-mode
