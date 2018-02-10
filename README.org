@@ -15,7 +15,10 @@
 **** language support
      + emacs lisp
      + c/c++
-
+***** TODO
+      + support python
+      + support scheme
+      + support erlang
 **** more about auto-complete 
      the path in lang-c++.el is diffrent for diffrent machine
      i highly recommend use
