@@ -15,7 +15,7 @@
 **** language support
      + emacs lisp
      + c/c++
-**** TODO more support will be complete in tomorrow
+**** TODO more support will be complete in tomorrow xD
       + support python
       + support scheme
       + support erlang
