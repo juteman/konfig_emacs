@@ -16,7 +16,7 @@
 		       helm
 		       ivy
 		       ;;
-		       better-defaults
+		       ;;better-defaults
 		       ;;org-mode
 		       org-bullets
 		       ;;括号匹配

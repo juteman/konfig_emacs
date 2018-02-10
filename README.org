@@ -1,0 +1,26 @@
+** config of my emacs
+**** emacs pakage
+     + auto-complete
+     + auto-complete-clang
+     + clang-format
+     + counsel
+     + dash
+     + flycheck
+     + ivy
+     + org-bullets
+     + rainbow-deliniters
+     + smartparens
+     + yasnippet
+     + zenburn-theme
+**** language support
+     + emacs lisp
+     + c/c++
+
+**** more about auto-complete 
+     the path in lang-c++.el is diffrent for diffrent machine
+     i highly recommend use
+     #+BEGIN_SRC 
+     echo "" | c++ -v -x c++ -E -
+     #+END_SRC
+     to find your include path. Otherwise it will get the wrong path.
+      
