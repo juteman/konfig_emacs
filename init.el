@@ -10,6 +10,7 @@
 (require 'smartparens-config)
 (require 'init-complete)
 (require 'init-ui)
+(require 'init-git)
 (require 'init-better-defaults)
 (require 'lang-c++)
 (require 'init-orgmode)

@@ -33,6 +33,8 @@
 		       clang-format
                        ;;flycheck
                        flycheck
+		       ;;magit
+		       magit
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)
