@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <string.h>
+#include <netinet/in.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <pthread.h>
+#include <unistd.h>
+$0
