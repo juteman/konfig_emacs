@@ -12,6 +12,7 @@
      + smartparens
      + yasnippet
      + zenburn-theme
+     + magit
 **** language support
      + emacs lisp
      + c/c++
