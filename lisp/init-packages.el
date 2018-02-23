@@ -35,6 +35,10 @@
                        flycheck
 		       ;;magit
 		       magit
+		       ;;python
+		       elpy
+		       py-autopep8
+		       ein
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)

@@ -13,11 +13,13 @@
      + yasnippet
      + zenburn-theme
      + magit
+     + elpa
 **** language support
      + emacs lisp
      + c/c++
+     + python
 **** TODO more support will be complete in tomorrow xD
-      + support python
+      + support python [finish]
       + support scheme
       + support erlang
 **** more about auto-complete 
