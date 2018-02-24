@@ -14,6 +14,7 @@
      + zenburn-theme
      + magit
      + elpa
+     + ggtags
 **** language support
      + emacs lisp
      + c/c++
@@ -22,6 +23,17 @@
       + support python [finish]
       + support scheme
       + support erlang
+**** about python
+the core of python config is elpa.
+to support elpa.we need install : 
+     #+BEGIN_SRC
+pip install rope
+pip install jedi
+pip install flake8
+pip install autopep8
+pip install yapf
+pip install jupyter
+     #+END_SRC
 **** more about auto-complete 
      the path in lang-c++.el is diffrent for diffrent machine
      i highly recommend use
@@ -29,4 +41,9 @@
      echo "" | c++ -v -x c++ -E -
      #+END_SRC
      to find your include path. Otherwise it will get the wrong path.
-      
+  
+**** about tags index   
+     I use gtags + ggtags to support tags index
+     before use it 
+     install GNU GLOBAL
+     
