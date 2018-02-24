@@ -1,4 +1,5 @@
-(add-hook 'python-mode #'smartparens-mode)
+(add-hook 'python-mode-hook #'smartparens-mode)
+(add-hook 'python-mode-hook #'rainbow-delimiters-mode)
 (elpy-enable)
 
 (when (require 'flycheck nil t)
