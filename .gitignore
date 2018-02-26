@@ -1,0 +1,7 @@
+/recentf
+
+/elpa/
+/elpa/*
+/*.elc
+
+/~*
