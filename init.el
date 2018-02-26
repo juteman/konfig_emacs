@@ -1,14 +1,14 @@
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(setq custom-safe-themes 1)
-(load-theme 'zenburn 1)
+
 ;; 插件包管理
 ;; ------------分割线-----------------------------------------------------
 
 (require 'init-packages)
 (require 'smartparens-config)
 (require 'init-complete)
+(require 'highlight-indentation)
 (require 'init-ui)
 (require 'init-git)
 (require 'init-better-defaults)
@@ -16,6 +16,10 @@
 (require 'init-orgmode)
 (require 'lang-elisp)
 (require 'lang-python)
+(setq custom-safe-themes 1)
+(load-theme 'zenburn 1)
+(set-face-background 'highlight-indentation-face "#e3e3d3")
+(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

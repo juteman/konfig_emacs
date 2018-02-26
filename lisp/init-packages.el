@@ -15,7 +15,9 @@
 		       ;;helm
 		       helm
 		       ivy
-		       ;;
+		       ;;ivy
+		       counsel
+		       swiper
 		       ;;better-defaults
 		       ;;org-mode
 		       org-bullets
@@ -29,6 +31,8 @@
 		       auto-complete
 		       auto-complete-clang
                        ac-helm
+		       ;;缩进线(已经克隆)
+		       
 		       ;;clang-format
 		       clang-format
                        ;;flycheck

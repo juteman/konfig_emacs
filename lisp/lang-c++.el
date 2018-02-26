@@ -2,7 +2,8 @@
 (require 'auto-complete-clang)
 (add-hook 'c++-mode-hook #'smartparens-mode)
 (add-hook 'c++-mode-hook #'rainbow-delimiters-mode)
-
+(add-hook 'c-mode-common-hook #'highlight-indentation-mode)
+(add-hook 'c-mode-common-hook #'highlight-indentation-current-column-mode)
 (add-hook 'c-mode-common-hook #'smartparens-mode)
 (add-hook 'c-mode-common-hook #'rainbow-delimiters-mode)
 ;;END
