@@ -32,6 +32,9 @@
 		       auto-complete-clang
                        ac-helm
 		       ;;缩进线(已经克隆)
+		       ;;gtags
+		       ggtags
+		       counsel-gtags
 		       
 		       ;;clang-format
 		       clang-format

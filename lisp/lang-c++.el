@@ -2,8 +2,9 @@
 (require 'auto-complete-clang)
 (add-hook 'c++-mode-hook #'smartparens-mode)
 (add-hook 'c++-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'c-mode-common-hook #'highlight-indentation-mode)
-(add-hook 'c-mode-common-hook #'highlight-indentation-current-column-mode)
+;;GUI下使用对齐线
+;;(add-hook 'c-mode-common-hook #'highlight-indentation-mode)
+;;(add-hook 'c-mode-common-hook #'highlight-indentation-current-column-mode)
 (add-hook 'c-mode-common-hook #'smartparens-mode)
 (add-hook 'c-mode-common-hook #'rainbow-delimiters-mode)
 ;;END
@@ -47,6 +48,17 @@
 (add-hook 'c++-mode-hook 'flycheck-mode)
 (add-hook 'c-mode-common-hook 'flycheck-mode)
 (add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
+;;gtags-mode
+(add-hook 'c-mode-hook 'counsel-gtags-mode)
+(add-hook 'c++-mode-hook 'counsel-gtags-mode)
+
+(with-eval-after-load 'counsel-gtags
+  (define-key counsel-gtags-mode-map (kbd "M-t") 'counsel-gtags-find-definition)
+  (define-key counsel-gtags-mode-map (kbd "M-r") 'counsel-gtags-find-reference)
+  (define-key counsel-gtags-mode-map (kbd "M-s") 'counsel-gtags-find-symbol)
+    (define-key counsel-gtags-mode-map (kbd "M-,") 'counsel-gtags-go-backward))
+
+
 (provide 'lang-c++)
 
 

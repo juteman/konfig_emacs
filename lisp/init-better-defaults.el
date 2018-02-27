@@ -43,6 +43,7 @@
 ;;END
 
 ;;flycheck
-
+;;gtags default mode
+(setq gtags-suggested-key-mapping t)
 
 (provide 'init-better-defaults)
