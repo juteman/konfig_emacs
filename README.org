@@ -43,4 +43,9 @@ pip install jupyter
      I use gtags + ggtags to support tags index
      before use it 
      install GNU GLOBAL
+**** chinese setting 
+     use cnfonts to setting chinese 
+     you can refference : [[https://github.com/tumashu/cnfonts][cnfonts]]
+     
+     
      

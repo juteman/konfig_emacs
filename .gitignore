@@ -3,6 +3,7 @@
 /auto-save-list
 /network-security.data
 /.session
+/cnfonts
 /session.*
 /custom.el
 *.elc
