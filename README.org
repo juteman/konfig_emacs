@@ -1,7 +1,12 @@
 ** config of my emacs
+   to use this config :
+   +BEGIN_SRC
+git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
+   +END_SRC
 **** emacs pakage
-     + auto-complete
-     + auto-complete-clang
+     + +auto-complete [delete]+
+     + +auto-complete-clang [delete]+
+     + company-mode
      + clang-format
      + counsel
      + dash
@@ -34,14 +39,6 @@ pip install autopep8
 pip install yapf
 pip install jupyter
      #+END_SRC
-**** more about auto-complete 
-     the path in lang-c++.el is diffrent for diffrent machine
-     i highly recommend use
-     #+BEGIN_SRC 
-     echo "" | c++ -v -x c++ -E -
-     #+END_SRC
-     to find your include path. Otherwise it will get the wrong path.
-  
 **** about tags index   
      I use gtags + ggtags to support tags index
      before use it 

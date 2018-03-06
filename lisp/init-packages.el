@@ -1,4 +1,3 @@
-
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
@@ -11,7 +10,7 @@
  ;; Add Packages
  (defvar my/packages '(
                        ;;themes
-                       zenburn-theme
+                       spacemacs-theme
 		       ;;helm
 		       helm
 		       ivy
@@ -46,6 +45,7 @@
 		       elpy
 		       py-autopep8
 		       ein
+		       cnfonts
                        ) "Default packages")
 
  (setq package-selected-packages my/packages)
