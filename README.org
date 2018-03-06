@@ -20,12 +20,13 @@ git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
      + magit
      + elpa
      + ggtags
+     + markdown mode
 **** language support
      + emacs lisp
      + c/c++
      + python
 **** TODO more support will be complete in tomorrow xD
-      + support python [finish]
+      + +support python [finish]+
       + support scheme
       + support erlang
 **** about python

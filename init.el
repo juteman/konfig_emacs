@@ -12,6 +12,7 @@
 (require 'init-ui)
 (require 'init-git)
 (require 'init-better-defaults)
+(require 'init-md)
 (require 'lang-c++)
 (require 'init-orgmode)
 (require 'lang-elisp)

@@ -11,6 +11,7 @@
  (defvar my/packages '(
                        ;;themes
                        spacemacs-theme
+		       markdown-mode
 		       ;;helm
 		       helm
 		       ivy
