@@ -1,8 +1,8 @@
 ** config of my emacs
    to use this config :
-   +BEGIN_SRC
+   #+BEGIN_SRC
 git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
-   +END_SRC
+   #+END_SRC
 **** emacs pakage
      + +auto-complete [delete]+
      + +auto-complete-clang [delete]+
