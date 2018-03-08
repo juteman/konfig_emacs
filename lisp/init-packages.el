@@ -12,6 +12,8 @@
                        ;;themes
                        spacemacs-theme
 		       markdown-mode
+		       ;;ecb
+		       neotree
 		       ;;helm
 		       helm
 		       ivy
@@ -31,6 +33,11 @@
 		       auto-complete
 		       auto-complete-clang
                        ac-helm
+		       company
+		       irony
+		       company-irony
+		       company-irony-c-headers
+		       flycheck-irony
 		       ;;缩进线(已经克隆)
 		       ;;gtags
 		       ggtags

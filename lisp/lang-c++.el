@@ -15,8 +15,8 @@
 
 ;;自动补全设置
 ;;ac-clang-flags 设置
-;;(ac-config-default)
-;;;; (setq ac-clang-flags
+
+;; (setq ac-clang-flags
 ;;       (mapcar (lambda (item)(concat "-I" item))
 ;; 	      (split-string
 ;; 	       "
@@ -28,16 +28,15 @@
 ;; /usr/include/x86_64-linux-gnu
 ;; /usr/include
 
-
 ;; ")))
 
 
-;; (defun my-cc-mode-setup()
-;;   (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))
+(defun my-cc-mode-setup()
+  (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))
 
-;; (add-hook 'c-mode-common-hook 'my-cc-mode-setup)
-;; (add-hook 'c++-mode-hook 'my-cc-mode-setup)
-;; ;;END
+(add-hook 'c-mode-common-hook 'my-cc-mode-setup)
+(add-hook 'c++-mode-hook 'my-cc-mode-setup)
+;;END
 
 
 ;;clang-format
@@ -58,7 +57,9 @@
   (define-key counsel-gtags-mode-map (kbd "M-r") 'counsel-gtags-find-reference)
   (define-key counsel-gtags-mode-map (kbd "M-s") 'counsel-gtags-find-symbol)
     (define-key counsel-gtags-mode-map (kbd "M-,") 'counsel-gtags-go-backward))
-
+;;irony补全
+(eval-after-load 'company
+  '(add-to-list 'company-backends '(company-irony company-yasnippet)))
 
 (provide 'lang-c++)
 
