@@ -21,10 +21,15 @@ git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
      + elpa
      + ggtags
      + markdown mode
-**** language support
+     + auctex
+****  support
      + emacs lisp
      + c/c++
      + python
+     + latex
+     + markdown
+     + org-mode
+     + git (provide by magit)
 **** TODO more support will be complete in tomorrow xD
       + +support python [finish]+
       + support scheme
@@ -47,6 +52,7 @@ pip install jupyter
 **** chinese setting 
      use cnfonts to setting chinese 
      you can refference : [[https://github.com/tumashu/cnfonts][cnfonts]]
+     
      
      
      

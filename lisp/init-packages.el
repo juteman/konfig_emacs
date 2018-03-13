@@ -27,6 +27,8 @@
 		       smartparens
 		       ;;彩虹括号
 		       rainbow-delimiters
+		       ;;latex
+		       auctex
 		       ;;yasnippet
 		       yasnippet
 		       ;;自动补全

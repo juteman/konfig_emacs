@@ -17,6 +17,9 @@
 ;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ;旧命令交互
 ;;END
 
+;; 修改mark 按键
+(global-unset-key (kbd "C-SPC"))  
+(global-set-key (kbd "S-SPC") 'set-mark-command)  
 
 ;;ivy-mode
 ;;(require 'helm-config)
