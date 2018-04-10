@@ -58,8 +58,8 @@
   (define-key counsel-gtags-mode-map (kbd "M-s") 'counsel-gtags-find-symbol)
     (define-key counsel-gtags-mode-map (kbd "M-,") 'counsel-gtags-go-backward))
 ;;irony补全
-(eval-after-load 'company
-  '(add-to-list 'company-backends '(company-irony company-yasnippet)))
+;;(eval-after-load 'company
+;;  '(add-to-list 'company-backends '(company-irony company-yasnippet)))
 
 (provide 'lang-c++)
 
