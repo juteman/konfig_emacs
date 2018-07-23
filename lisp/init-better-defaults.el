@@ -20,7 +20,10 @@
 ;; 修改mark 按键
 (global-unset-key (kbd "C-SPC"))  
 (global-set-key (kbd "S-SPC") 'set-mark-command)  
-
+;; 使用space 代替tab
+(setq-default indent-tabs-mode nil)
+;;去除文件末尾空格
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;ivy-mode
 ;;(require 'helm-config)
 (require 'ivy)
