@@ -20,8 +20,9 @@
 ;; 修改mark 按键
 (global-unset-key (kbd "C-SPC"))  
 (global-set-key (kbd "S-SPC") 'set-mark-command)  
-;; 使用space 代替tab
+;; 使用space 代替tab, indent setting
 (setq-default indent-tabs-mode nil)
+(setq tab-width 4)
 ;;去除文件末尾空格
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;ivy-mode
