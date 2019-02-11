@@ -32,19 +32,20 @@
 		       ;;yasnippet
 		       yasnippet
 		       ;;自动补全
-		       auto-complete
-		       auto-complete-clang
-                       ac-helm
+		       ;;auto-complete
+		       ;;auto-complete-clang
+                       ;;ac-helm
 		       company
 		       irony
 		       company-irony
 		       company-irony-c-headers
 		       flycheck-irony
+                       irony-eldoc
 		       ;;缩进线(已经克隆)
 		       ;;gtags
 		       ggtags
 		       counsel-gtags
-		       
+
 		       ;;clang-format
 		       clang-format
                        ;;flycheck

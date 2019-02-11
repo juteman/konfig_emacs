@@ -1,5 +1,5 @@
 (require 'yasnippet)
-(require 'auto-complete-config) 
+(require 'auto-complete-config)
 ;;(ac-config-default)
 ;;(global-auto-complete-mode 1)
 ;;(setq ac-use-quick-help t)
@@ -16,10 +16,14 @@
       company-show-numbers            t
       company-tooltip-limit           20
       company-dabbrev-downcase        nil)
-(add-hook 'c++-mode-hook'irony-mode)
-(add-hook 'c-mode-hook'irony-mode)
-(add-hook 'objc-mode-hook'irony-mode)
-(add-hook 'irony-mode-hook'irony-cdb-autosetup-compile-options)
+
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends '(company-irony-c-headers company-irony)))
+
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 (provide 'init-complete)
-
