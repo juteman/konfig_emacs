@@ -37,7 +37,8 @@
 ;;(add-hook 'c-mode-common-hook 'my-cc-mode-setup)
 ;;(add-hook 'c++-mode-hook 'my-cc-mode-setup)
 ;;END
-
+(add-hook 'c++-mode-hook #'lsp)
+(add-hook 'c-mode-common-hook #'lsp)
 
 ;;clang-format
 (require 'clang-format)
@@ -45,19 +46,14 @@
 (global-set-key (kbd "C-c u") 'clang-format-buffer)
 (setq clang-format-style-option "llvm")
 ;;END
+
+;; irony
 (add-hook 'c++-mode-hook 'flycheck-mode)
 (add-hook 'c-mode-common-hook 'flycheck-mode)
 (add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
-;;gtags-mode
-(add-hook 'c-mode-hook 'counsel-gtags-mode)
-(add-hook 'c++-mode-hook 'counsel-gtags-mode)
 
-(with-eval-after-load 'counsel-gtags
-  (define-key counsel-gtags-mode-map (kbd "M-t") 'counsel-gtags-find-definition)
-  (define-key counsel-gtags-mode-map (kbd "M-r") 'counsel-gtags-find-reference)
-  (define-key counsel-gtags-mode-map (kbd "M-s") 'counsel-gtags-find-symbol)
-    (define-key counsel-gtags-mode-map (kbd "M-,") 'counsel-gtags-go-backward))
+;;
 
 (provide 'lang-c++)

@@ -3,56 +3,15 @@
    #+BEGIN_SRC
 git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
    #+END_SRC
-**** emacs pakage
-     + +auto-complete [delete]+
-     + +auto-complete-clang [delete]+
-     + company-mode
-     + clang-format
-     + counsel
-     + dash
-     + flycheck
-     + ivy
-     + org-bullets
-     + rainbow-deliniters
-     + smartparens
-     + yasnippet
-     + zenburn-theme
-     + magit
-     + elpa
-     + ggtags
-     + markdown mode
-     + auctex
-****  support
-     + emacs lisp
-     + c/c++
-     + python
-     + latex
-     + markdown
-     + org-mode
-     + git (provide by magit)
-**** TODO more support will be complete in tomorrow xD
-      + +support python [finish]+
-      + support scheme
-      + support erlang
-**** about python
-the core of python config is elpa.
-to support elpa.we need install : 
-     #+BEGIN_SRC
-pip install rope
-pip install jedi
-pip install flake8
-pip install autopep8
-pip install yapf
-pip install jupyter
-     #+END_SRC
-**** about tags index   
-     I use gtags + ggtags to support tags index
-     before use it 
-     install GNU GLOBAL
-**** chinese setting 
-     use cnfonts to setting chinese 
-     you can refference : [[https://github.com/tumashu/cnfonts][cnfonts]]
-     
-     
-     
-     
+*** about c/c++ setting
+    now I find maybe LSP is the best for c++ on emacs.
+    i used to use irony gtags.
+    but now I use [[https://github.com/emacs-lsp/lsp-mode#supported-languages][lsp-mode]] to do code completion and so on.
+    the servers i use is ccls
+
+*** about python
+    In the short time i am not write python code.but it also support by lsp-mode.
+    I will add this when the time I write python.
+
+*** neotree
+    press f8 to open the file tree

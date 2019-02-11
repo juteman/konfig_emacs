@@ -16,12 +16,14 @@
 ;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ;旧命令交互
 ;;END
+
+
 ;; Neo tree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 ;; 修改mark 按键
-(global-unset-key (kbd "C-SPC"))  
-(global-set-key (kbd "S-SPC") 'set-mark-command)  
+(global-unset-key (kbd "C-SPC"))
+(global-set-key (kbd "S-SPC") 'set-mark-command)
 ;; 使用space 代替tab, indent setting
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4)
@@ -52,8 +54,7 @@
 ;;END
 
 ;;flycheck
-;;gtags default mode
-(setq gtags-suggested-key-mapping t)
+
 
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
@@ -69,4 +70,10 @@
 ;;cnfonts enable
 (require 'cnfonts)
 (cnfonts-enable)
+
+;; ccls setting
+(require 'lsp-mode)
+(require 'ccls)
+
+(setq ccls-executable "/usr/local/bin/ccls")
 (provide 'init-better-defaults)

@@ -38,14 +38,14 @@
 		       company
 		       irony
 		       company-irony
+                       company-lsp
 		       company-irony-c-headers
 		       flycheck-irony
                        irony-eldoc
 		       ;;缩进线(已经克隆)
 		       ;;gtags
-		       ggtags
-		       counsel-gtags
-
+                       ccls
+		       lsp-mode
 		       ;;clang-format
 		       clang-format
                        ;;flycheck
