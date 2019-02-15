@@ -37,14 +37,13 @@
                        ;;ac-helm
 		       company
 		       irony
-		       company-irony
                        company-lsp
-		       company-irony-c-headers
 		       flycheck-irony
                        irony-eldoc
 		       ;;缩进线(已经克隆)
 		       ;;gtags
                        ccls
+                       lsp-ui
 		       lsp-mode
 		       ;;clang-format
 		       clang-format
@@ -53,8 +52,7 @@
 		       ;;magit
 		       magit
 		       ;;python
-		       elpy
-		       py-autopep8
+
 		       ein
 		       cnfonts
                        ) "Default packages")

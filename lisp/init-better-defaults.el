@@ -74,6 +74,10 @@
 ;; ccls setting
 (require 'lsp-mode)
 (require 'ccls)
+(require 'lsp-ui)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+(setq ccls-sem-highlight-method 'font-lock)
+(ccls-use-default-rainbow-sem-highlight)
 
 (setq ccls-executable "/usr/local/bin/ccls")
 (provide 'init-better-defaults)

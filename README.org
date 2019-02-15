@@ -10,8 +10,11 @@ git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
     the servers i use is ccls
 
 *** about python
-    In the short time i am not write python code.but it also support by lsp-mode.
-    I will add this when the time I write python.
+    use
+    #+BEGIN_SRC
+pip install 'python-language-server[all]'
+    #+END_SRC
+    add the lsp of python.then enjoy it.
 
 *** neotree
     press f8 to open the file tree

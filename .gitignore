@@ -52,3 +52,5 @@ site-lisp/package/
 /plantuml.jar
 /magithub
 /irony
+/transient
+.lsp-session-v1
