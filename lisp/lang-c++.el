@@ -47,13 +47,10 @@
 (setq clang-format-style-option "llvm")
 ;;END
 
-;; irony
+;; flycheck
 (add-hook 'c++-mode-hook 'flycheck-mode)
 (add-hook 'c-mode-common-hook 'flycheck-mode)
 (add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
-
 ;;
 
 (provide 'lang-c++)
