@@ -78,6 +78,8 @@
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
 (setq ccls-sem-highlight-method 'font-lock)
 (ccls-use-default-rainbow-sem-highlight)
-
+(define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
+(define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
 (setq ccls-executable "/usr/local/bin/ccls")
+(setq clangd-executable "/usr/bin/clangd-7")
 (provide 'init-better-defaults)

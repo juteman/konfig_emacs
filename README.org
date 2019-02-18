@@ -8,7 +8,11 @@ git clone https://github.com/juteman/konfig_emacs.git  ~/.emacs.d
     i used to use irony gtags.
     but now I use [[https://github.com/emacs-lsp/lsp-mode#supported-languages][lsp-mode]] to do code completion and so on.
     the servers i use is ccls
-
+    when you use this config,you should build ccls first.
+    or you can't use c/c++ config.
+****  when read the linux source code and other huge source code
+     I find that use lsp is hard to read the hugo source code. the best way I think is to use the old
+     ways -- tags. So download gnu global, and use emacs or use htags to view code in staic website
 *** about python
     use
     #+BEGIN_SRC

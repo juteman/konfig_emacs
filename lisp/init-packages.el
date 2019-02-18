@@ -11,6 +11,7 @@
  (defvar my/packages '(
                        ;;themes
                        spacemacs-theme
+		       zenburn-theme
 		       markdown-mode
 		       ;;ecb
 		       neotree

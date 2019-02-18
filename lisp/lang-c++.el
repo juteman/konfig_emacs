@@ -41,16 +41,16 @@
 (add-hook 'c-mode-common-hook #'lsp)
 
 ;;clang-format
-(require 'clang-format)
-(global-set-key (kbd "C-c i") 'clang-format-region)
-(global-set-key (kbd "C-c u") 'clang-format-buffer)
-(setq clang-format-style-option "llvm")
+;;(require 'clang-format)
+;;(global-set-key (kbd "C-c i") 'clang-format-region)
+;;(global-set-key (kbd "C-c u") 'clang-format-buffer)
+;;(setq clang-format-style-option "llvm")
 ;;END
 
 ;; flycheck
-(add-hook 'c++-mode-hook 'flycheck-mode)
-(add-hook 'c-mode-common-hook 'flycheck-mode)
-(add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
+;;(add-hook 'c++-mode-hook 'flycheck-mode)
+;;(add-hook 'c-mode-common-hook 'flycheck-mode)
+;;(add-hook 'c++-mode-hook (lambda ()(setq flycheck-clang-language-standard "c++11")))
 ;;
 
 (provide 'lang-c++)

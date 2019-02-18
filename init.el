@@ -20,9 +20,7 @@
 (require 'lang-elisp)
 (require 'lang-python)
 (setq custom-safe-themes 1)
-(load-theme 'spacemacs-light 1)
-(set-face-background 'highlight-indentation-face "#e3e3d3")
-(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
+(load-theme 'zenburn 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
