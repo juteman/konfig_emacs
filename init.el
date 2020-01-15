@@ -19,6 +19,7 @@
 (require 'neotree)
 (require 'lang-elisp)
 (require 'lang-python)
+(require 'lang-csharp)
 (setq custom-safe-themes 1)
 (load-theme 'zenburn 1)
 (custom-set-variables

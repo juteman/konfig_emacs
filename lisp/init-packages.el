@@ -44,6 +44,8 @@
 		       ;;缩进线(已经克隆)
 		       ;;gtags
                        ccls
+                       csharp-mode
+                       omnisharp
                        lsp-ui
 		       lsp-mode
 		       ;;clang-format

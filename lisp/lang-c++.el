@@ -39,7 +39,17 @@
 ;;END
 (add-hook 'c++-mode-hook #'lsp)
 (add-hook 'c-mode-common-hook #'lsp)
+(defun my-cc-mode-setup()
+  (setq indent-tabs-mode nil)
+  (setq c-basic-offset 4)
+  (setq tab-width 4)
+  (setq evil-shift-width 4)
+;(electric-pair-mode 1)       ;; Emacs 24
+;(electric-pair-local-mode 1) ;; Emacs 25
 
+
+  )
+(add-hook 'cc-mode-hook 'my-cc-mode-setup t)
 ;;clang-format
 ;;(require 'clang-format)
 ;;(global-set-key (kbd "C-c i") 'clang-format-region)
