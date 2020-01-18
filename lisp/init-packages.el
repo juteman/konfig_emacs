@@ -15,6 +15,7 @@
 		       markdown-mode
 		       ;;ecb
 		       neotree
+ 		       use-package
 		       ;;helm
 		       helm
 		       ivy
@@ -37,12 +38,14 @@
 		       ;;auto-complete-clang
                        ;;ac-helm
 		       company
+                       company-lua
 		       irony
                        company-lsp
 		       flycheck-irony
                        irony-eldoc
 		       ;;缩进线(已经克隆)
 		       ;;gtags
+		       lua-mode
                        ccls
                        csharp-mode
                        omnisharp

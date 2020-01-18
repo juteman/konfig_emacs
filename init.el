@@ -20,6 +20,7 @@
 (require 'lang-elisp)
 (require 'lang-python)
 (require 'lang-csharp)
+(require 'lang-lua)
 (setq custom-safe-themes 1)
 (load-theme 'zenburn 1)
 (custom-set-variables
